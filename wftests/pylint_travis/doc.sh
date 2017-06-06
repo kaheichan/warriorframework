@@ -9,7 +9,7 @@ sphinx-apidoc -f -o  docs/source  warrior/Framework
 
 git config 
 
-git add docs
-git commit -m "update warriorframework rst documents"
-git config --list
-git push -u origin release
+# git add docs
+# git commit -m "update warriorframework rst documents"
+# git config --list
+# git push -u origin release

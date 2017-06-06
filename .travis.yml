@@ -28,3 +28,11 @@ install:
 
 script:
     - ./wftests/pylint_travis/doc.sh
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
+  on:
+    target_branch: release
+    branch: release
