@@ -3,16 +3,7 @@ language: python
 matrix:
   include:
     - os: linux
-      env: INSTALL=yes TESTFILE=./wftests/warrior_tests/projects/pj_comparison.xml
-      python: 2.7
-    - os: linux
-      env: INSTALL=yes TESTFILE=./wftests/warrior_tests/projects/pj_cond_var.xml
-      python: 2.7
-    - os: linux
-      env: INSTALL=no TESTFILE=./wftests/warrior_tests/projects/pj_rest.xml
-      python: 2.7
-    - os: linux
-      env: INSTALL=no TESTFILE=./wftests/warrior_tests/projects/pj_retry.xml
+      env: INSTALL=yes
       python: 2.7
 
 before_install:
@@ -29,7 +20,8 @@ install:
         pip install paramiko==1.16.0 ;
         pip install pysnmp==4.3.2 ;
         pip install pyvirtualdisplay==0.2.1 ;
+        pip install sphinx-apidoc ;
       fi
 
 script:
-    - python ./warrior/Warrior $TESTFILE
+    - ./wf_tests/pylint_travis/doc.sh
