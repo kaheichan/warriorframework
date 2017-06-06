@@ -132,6 +132,14 @@ Framework\.Utils\.selenium\_Utils module
     :undoc-members:
     :show-inheritance:
 
+Framework\.Utils\.snmp\_utils module
+------------------------------------
+
+.. automodule:: Framework.Utils.snmp_utils
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
 Framework\.Utils\.string\_Utils module
 --------------------------------------
 
