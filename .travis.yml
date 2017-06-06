@@ -28,4 +28,4 @@ install:
 
 script:
     - ls ;
-    - ./wf_tests/pylint_travis/doc.sh
+    - ./wftests/pylint_travis/doc.sh
