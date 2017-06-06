@@ -27,4 +27,5 @@ install:
       fi
 
 script:
+    - ls ;
     - ./wf_tests/pylint_travis/doc.sh
