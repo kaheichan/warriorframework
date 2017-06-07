@@ -12,6 +12,7 @@ matrix:
 before_install:
     - if [ ${INSTALL} = "yes" ]; then
         sudo apt-get install xvfb ;
+        sudo gem install travis;
       fi
 
 install:
@@ -28,9 +29,3 @@ install:
 
 script:
     - ./wftests/pylint_travis/doc.sh
-
-deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
-  target_branch: release
