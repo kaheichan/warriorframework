@@ -12,6 +12,8 @@ sphinx-apidoc -f -o  docs/source  warrior/Framework
 set -x
 git config --global user.email "travis@travis-ci.org"
 git config --global user.name "Travis CI"
+# please refer to https://docs.travis-ci.com/user/encryption-keys
+# to see how to generate the encryption key
 git remote add origin-docs https://$GITHUB_TOKEN@github.com/kaheichan/warriorframework.git
 
 git add docs
