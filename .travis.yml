@@ -12,7 +12,6 @@ matrix:
 before_install:
     - if [ ${INSTALL} = "yes" ]; then
         sudo apt-get install xvfb ;
-        sudo gem install travis;
       fi
 
 install:
@@ -29,3 +28,5 @@ install:
 
 script:
     - ./wftests/pylint_travis/doc.sh
+
+secure: "Z5UcJaNJjqEf5XR9rPsEn3+10yVKQwaL+7jccTqppQBSJjZCNnKXvUTfERkaHyKhv0ST0zudAG7OdxS9XIXdlFHjWwXUzjLjbOWw8erokEEBt6hT+sgwWrgvkHmVqxReEW+EZbbISoqXUh+T70pJ9SBOUgDWqkG9/UInniHbfUgQzQSXo3/FMJj6JSUOW1xLEwnxKhZ/L+mYhL2KA6o12eiu7A298PViGk8NcO3G81rA1R7KZqCxfakJAkJeSEKHg5ukhYCBwMH1QXlYy44NwRoZnR53F1ihPqpKBypcMrn0IozB10BZ1Pg/4MXIEkjk38mKHZQ4c2LTSa0f4DFP0k1TxKDZzpaXSzcCW7+pIkIctMxc2WSyL1qsspsYe5J694wMXd9RVwjb+c1XXcHzQI/EaYzx3YPscd+eSkuySMBk41xRhYg8BXDB/fo3y7hhPuc89KMNNh7OyizbY0l7dqc7pRAC8/CRNATUAedzsuB2hgYRaI8vqQh+hqZ9xYyCYJctp1EDOQp55Y2R6htc4xhm/Ja6X3FGd202vK1VD6qEu84ADmRCM8UhSKH/Zuaoa0AtF07hqKf9TTJPWjYYKbpThVRre9ME7qCrnbQkeOgc0q2YjAk52O0qAhMy+oe9HbFTybai0rQ0qqiRgcQTWebIoiXL4LlBPbyBBiubeNY="
