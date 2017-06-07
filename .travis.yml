@@ -13,6 +13,10 @@ matrix:
       env: INSTALL=yes
       python: 2.7
 
+branches:
+  only:
+  - master
+
 before_install:
     - if [ ${INSTALL} = "yes" ]; then
         sudo apt-get install xvfb ;

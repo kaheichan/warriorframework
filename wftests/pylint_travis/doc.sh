@@ -1,3 +1,5 @@
+git checkout release
+
 #Remove all existing package .rst files.
 rm -rf docs/source/Actions*rst
 rm -rf docs/source/Framework*rst
@@ -12,7 +14,6 @@ git config --global user.email "travis@travis-ci.org"
 git config --global user.name "Travis CI"
 git remote add origin-docs https://$GITHUB_TOKEN@github.com/kaheichan/warriorframework.git
 
-git checkout release
 git add docs
 git commit -m "[skip ci] update warriorframework rst documents"
 git config --list
