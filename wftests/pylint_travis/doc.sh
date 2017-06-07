@@ -14,6 +14,6 @@ git remote add origin-docs https://$GITHUB_TOKEN@github.com/kaheichan/warriorfra
 
 git checkout release
 git add docs
-git commit -m "update warriorframework rst documents"
+git commit -m "[skip ci] update warriorframework rst documents"
 git config --list
 git push -u origin-docs release
