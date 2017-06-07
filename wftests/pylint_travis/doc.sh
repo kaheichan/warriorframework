@@ -11,7 +11,7 @@ git config --global user.email "travis@travis-ci.org"
 git config --global user.name "Travis CI"
 git remote add origin-docs https://${GITHUB_TOKEN}@github.com/kaheichan/warriorframework.git
 
-set +x
+set -x
 git add docs
 git commit -m "update warriorframework rst documents"
 git config --list
