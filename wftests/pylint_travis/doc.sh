@@ -12,10 +12,8 @@ git config --global user.email "travis@travis-ci.org"
 git config --global user.name "Travis CI"
 git remote add origin-docs https://$GITHUB_TOKEN@github.com/kaheichan/warriorframework.git
 
-echo "test" > ${TRAVIS_BUILD_NUMBER}.txt
-
 git checkout release
-git add .
+git add docs
 git commit -m "[skip ci] update warriorframework rst documents"
 git config --list
 git push -u origin-docs release
